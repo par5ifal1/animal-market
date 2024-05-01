@@ -1,5 +1,8 @@
 package ua.demchuk.marketplace.enums;
 
+import lombok.Getter;
+
+@Getter
 public enum AnimalCategory {
     FIRST(0, 20),
     SECOND(21, 40),
@@ -30,13 +33,5 @@ public enum AnimalCategory {
             }
         }
         throw new IllegalArgumentException("No category for value: " + value);
-    }
-
-    public int getMinCost() {
-        return minCost;
-    }
-
-    public int getMaxCost() {
-        return maxCost;
     }
 }
